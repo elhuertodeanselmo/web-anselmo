@@ -27,7 +27,7 @@
 
     caja = document.createElement("div");
     caja.className = "visitas";
-    caja.innerHTML = '<div class="odo" aria-hidden="true"></div><div class="txt">vecinos han pasado<br>ya por el huerto</div>';
+    caja.innerHTML = '<div class="odo" aria-hidden="true"></div><div class="txt">vecinos que ya han<br>pasado por el huerto</div>';
     botones.parentNode.insertBefore(caja, botones.nextSibling);
     odo = caja.querySelector(".odo");
   }
