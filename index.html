@@ -2,12 +2,13 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>El huerto de Anselmo · Recetas de pueblo y los aperos que de verdad uso</title>
-<meta name="description" content="Recetas de pueblo, trucos del campo y los cacharros de cocina que usa Anselmo en sus vídeos.">
-<meta property="og:title" content="El huerto de Anselmo · Recetas de pueblo y los aperos que de verdad uso"><meta property="og:description" content="Recetas de pueblo, trucos del campo y los cacharros de cocina que usa Anselmo en sus vídeos.">
-<meta name="theme-color" content="#fbf8f3">
+<meta name="description" content="Trucos de cocina y de casa de un ganadero castellano: castañas, membrillo, buñuelos, torreznos, caldo, tortilla y más, con los aperos que usa en cada vídeo.">
+<link rel="canonical" href="https://elhuertodeanselmo.com/">
+<meta property="og:type" content="article"><meta property="og:site_name" content="El huerto de Anselmo"><meta property="og:locale" content="es_ES">
+<meta property="og:title" content="El huerto de Anselmo · Recetas de pueblo y los aperos que de verdad uso"><meta property="og:description" content="Trucos de cocina y de casa de un ganadero castellano: castañas, membrillo, buñuelos, torreznos, caldo, tortilla y más, con los aperos que usa en cada vídeo."><meta property="og:url" content="https://elhuertodeanselmo.com/"><meta property="og:image" content="https://elhuertodeanselmo.com/img/huerto.jpg">
+<meta name="theme-color" content="#2a2420">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{--fondo:#f7f1e7;--crema:#efe5d4;--crema2:#e4d6bf;--tinta:#2a2420;--suave:#6f6255;--linea:#e2d4bd;
@@ -181,12 +182,31 @@ footer b{color:#fff8ec!important}
 .reel .medio img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .reel .medio video{z-index:1}
 .reel.prox .medio{background:linear-gradient(160deg,#d9cbb3,#b9a585)}
+
+/* artículo de cada vídeo */
+.articulo{max-width:46em;margin:0 auto;padding:10px 0 20px}
+.articulo h2{font-size:clamp(1.6rem,3.2vw,2.2rem);margin-top:1.6em}
+.articulo p,.articulo li{font-size:1.07rem;color:#3d342d}
+.pasos{list-style:none;padding:0;margin:18px 0 0;counter-reset:p;display:grid;gap:14px}
+.pasos li{position:relative;background:#fff;border:1px solid var(--linea);border-radius:18px;padding:18px 20px 18px 68px;box-shadow:var(--sombra)}
+.pasos li::before{counter-increment:p;content:counter(p);position:absolute;left:18px;top:16px;width:34px;height:34px;border-radius:50%;background:var(--teja);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-family:Lora,Georgia,serif}
+.pasos b{display:block;font-family:Lora,Georgia,serif;font-size:1.12rem;color:var(--tinta);margin-bottom:2px}
+.errores{padding-left:1.2em}.errores li{margin:.45em 0}.errores li::marker{color:var(--teja)}
+.fijarse{list-style:none;padding:0;margin:10px 0 0}.fijarse li{font-size:.93rem;color:var(--suave);margin:.35em 0}.fijarse li::before{content:"✓ ";color:var(--oliva);font-weight:700}
+.preg details{background:#fff;border:1px solid var(--linea);border-radius:16px;padding:14px 18px;margin:10px 0}
+.preg summary{cursor:pointer;font-weight:600;font-size:1.03rem;color:var(--tinta)}
+.preg details p{margin:.6em 0 0}
+.nota{background:var(--crema);border-radius:16px;padding:16px 20px;font-size:.98rem;color:#3d342d}
+.legal{max-width:46em;margin:0 auto;padding:30px 0 50px}
+.legal h2{font-size:1.5rem;margin-top:1.5em}.legal p,.legal li{color:#3d342d}
+.cab nav{gap:20px}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "El huerto de Anselmo", "url": "https://elhuertodeanselmo.com/", "inLanguage": "es"}</script>
 </head>
 <body>
 <header class="cab"><div class="env">
-  <a class="marca" href="index.html">El huerto de <span>Anselmo</span></a>
-  <nav><a class="ocultable" href="index.html#videos">Vídeos</a><a class="ocultable" href="despensa.html">Los aperos</a><a class="bt teja peq" href="https://payhip.com/elhuertodeanselmo">El recetario</a></nav>
+  <a class="marca" href="/">El huerto de <span>Anselmo</span></a>
+  <nav><a class="ocultable" href="/#videos">Vídeos</a><a class="ocultable" href="despensa.html">Los aperos</a><a class="ocultable" href="quien-es-anselmo.html">Quién soy</a><a class="bt teja peq" href="https://payhip.com/elhuertodeanselmo">El recetario</a></nav>
 </div></header>
 <main class="env">
 
@@ -205,43 +225,35 @@ footer b{color:#fff8ec!important}
     <span class="eyebrow">Quién soy</span>
     <h2>Me llamo Anselmo, y esto es mi huerto</h2>
     <p>Ganadero de Castilla de toda la vida, entre la lumbre, el corral y la huerta. En mis vídeos te enseño lo que aprendí de mi madre y de mi abuela, que no es poco.</p>
-    <p>Aquí te dejo, vídeo a vídeo, los aperos que uso de verdad. Lo que no uso, aquí no lo pongo. Y si algo falta de la mesa, pregúntale a Lucera.</p>
-    <p class="firma">— Anselmo</p>
+    <p>Cada vídeo tiene aquí su página: por qué pasa lo que pasa, el truco paso a paso, los errores que más veo y el apero que uso. Lo que no uso, aquí no lo pongo. Y si algo falta de la mesa, pregúntale a Lucera.</p>
+    <p><a class="bt claro peq flecha" href="quien-es-anselmo.html">Conóceme </a></p>
   </div>
 </div></div>
 <section class="sec" id="videos"><div class="ancho">
-  <div class="cabsec rev"><div><span class="eyebrow" style="color:var(--teja)">Los vídeos</span><h2>Lo que uso en cada vídeo</h2></div>
-  <p>Entra en cada uno y verás el truco y los aperos que salen.</p></div>
-  <div class="reels">
-<a class="reel rev" href="castanas.html"><div class="medio" style="position:absolute;inset:0"><img src="img/castanas.jpg" alt="" onerror="this.remove()"><video muted loop playsinline preload="metadata" poster="img/castanas.jpg"><source src="videos/castanas.mp4" type="video/mp4" onerror="this.parentNode.remove()"></video></div><div class="velo" style="z-index:2"></div><div class="txt" style="z-index:3"><small>De la lumbre</small><h3>El error que hace que tus castañas revienten</h3></div></a>
-<a class="reel rev" href="membrillo.html"><div class="medio" style="position:absolute;inset:0"><img src="img/membrillo.jpg" alt="" onerror="this.remove()"><video muted loop playsinline preload="metadata" poster="img/membrillo.jpg"><source src="videos/membrillo.mp4" type="video/mp4" onerror="this.parentNode.remove()"></video></div><div class="velo" style="z-index:2"></div><div class="txt" style="z-index:3"><small>De la despensa</small><h3>3 pasos para que el membrillo cuaje</h3></div></a>
-<div class="reel prox"><div class="medio" style="position:absolute;inset:0"></div><div class="velo"></div><div class="txt"><small>Próximamente</small><h3>Buñuelos de viento</h3></div></div>
-<div class="reel prox"><div class="medio" style="position:absolute;inset:0"></div><div class="velo"></div><div class="txt"><small>Próximamente</small><h3>Boniatos asados</h3></div></div>
-<div class="reel prox"><div class="medio" style="position:absolute;inset:0"></div><div class="velo"></div><div class="txt"><small>Próximamente</small><h3>Garrapiñadas</h3></div></div>
-  </div>
+  <div class="cabsec rev"><div><span class="eyebrow" style="color:var(--teja)">Los vídeos</span><h2>Lo que en la ciudad no te enseñan</h2></div>
+  <p>Entra en cada uno: el vídeo, el truco explicado paso a paso y lo que uso pa hacerlo.</p></div>
+  <div class="reels"><a class="reel rev" href="castanas.html"><div class="medio" style="position:absolute;inset:0"><img src="img/castanas.jpg" alt="" loading="lazy" onerror="this.remove()"><video muted loop playsinline preload="none" poster="img/castanas.jpg"><source src="videos/castanas.mp4" type="video/mp4"></video></div><div class="velo" style="z-index:2"></div><div class="txt" style="z-index:3"><small>De la lumbre</small><h3>El error que hace que tus castañas revienten</h3></div></a><a class="reel rev" href="membrillo.html"><div class="medio" style="position:absolute;inset:0"><img src="img/membrillo.jpg" alt="" loading="lazy" onerror="this.remove()"><video muted loop playsinline preload="none" poster="img/membrillo.jpg"><source src="videos/membrillo.mp4" type="video/mp4"></video></div><div class="velo" style="z-index:2"></div><div class="txt" style="z-index:3"><small>De la despensa</small><h3>3 pasos para que el membrillo cuaje</h3></div></a><a class="reel rev" href="bunuelos.html"><div class="medio" style="position:absolute;inset:0"><img src="img/bunuelos.jpg" alt="" loading="lazy" onerror="this.remove()"><video muted loop playsinline preload="none" poster="img/bunuelos.jpg"><source src="videos/bunuelos.mp4" type="video/mp4"></video></div><div class="velo" style="z-index:2"></div><div class="txt" style="z-index:3"><small>Dulces de la abuela</small><h3>Por qué tus buñuelos de viento no se inflan</h3></div></a><a class="reel rev" href="torreznos.html"><div class="medio" style="position:absolute;inset:0"><img src="img/torreznos.jpg" alt="" loading="lazy" onerror="this.remove()"><video muted loop playsinline preload="none" poster="img/torreznos.jpg"><source src="videos/torreznos.mp4" type="video/mp4"></video></div><div class="velo" style="z-index:2"></div><div class="txt" style="z-index:3"><small>De la matanza</small><h3>Por qué tus torreznos no crujen</h3></div></a><a class="reel rev" href="caldo.html"><div class="medio" style="position:absolute;inset:0"><img src="img/caldo.jpg" alt="" loading="lazy" onerror="this.remove()"><video muted loop playsinline preload="none" poster="img/caldo.jpg"><source src="videos/caldo.mp4" type="video/mp4"></video></div><div class="velo" style="z-index:2"></div><div class="txt" style="z-index:3"><small>De cuchara</small><h3>Caldo de brik contra caldo de gallina de corral</h3></div></a><a class="reel rev" href="tortilla.html"><div class="medio" style="position:absolute;inset:0"><img src="img/tortilla.jpg" alt="" loading="lazy" onerror="this.remove()"><video muted loop playsinline preload="none" poster="img/tortilla.jpg"><source src="videos/tortilla.mp4" type="video/mp4"></video></div><div class="velo" style="z-index:2"></div><div class="txt" style="z-index:3"><small>Almuerzos de campo</small><h3>El error que deja tu tortilla de patatas seca</h3></div></a><a class="reel rev" href="parabrisas.html"><div class="medio" style="position:absolute;inset:0"><img src="img/parabrisas.jpg" alt="" loading="lazy" onerror="this.remove()"><video muted loop playsinline preload="none" poster="img/parabrisas.jpg"><source src="videos/parabrisas.mp4" type="video/mp4"></video></div><div class="velo" style="z-index:2"></div><div class="txt" style="z-index:3"><small>Pa la casa y el coche</small><h3>No le eches agua caliente al cristal helado</h3></div></a></div>
 </div></section>
 <section class="sec" style="padding-top:0"><div class="ancho">
   <div class="cabsec rev"><div><span class="eyebrow" style="color:var(--teja)">Los aperos</span><h2>Lo que más uso</h2></div>
   <a class="bt borde peq flecha" href="despensa.html">Ver todos </a></div>
-  <div class="fichas"><article class="ficha rev" data-cat="Lumbre y asados">
+  <div class="fichas"><article class="ficha rev" data-cat="Sartenes y lumbre">
   <div class="foto"><div class="ph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><ellipse cx="26" cy="34" rx="20" ry="12"/><path d="M45 31l15-6"/><path d="M14 33c3 3 8 4 12 4"/></svg></div><img src="img/productos/castanera.jpg" alt="Sartén castañera Garcima, 28 cm" loading="lazy" onerror="this.remove()"></div>
   <div class="cuerpo"><h3>Sartén castañera Garcima, 28 cm</h3><p class="por">La de toda la vida, con sus agujeros pa que el fuego toque la castaña. Vale pa gas y pa la lumbre.</p>
   <div class="usos"><a href="castanas.html">Castañas asadas</a></div>
-  <a class="bt peq flecha" href="https://www.amazon.es/dp/B00L2IB8C8?tag=elhuertodeans-21" rel="sponsored nofollow noopener" target="_blank">Verlo en Amazon </a></div>
-</article>
-<article class="ficha rev" data-cat="Ollas y conservas">
-  <div class="foto"><div class="ph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><ellipse cx="26" cy="34" rx="20" ry="12"/><path d="M45 31l15-6"/><path d="M14 33c3 3 8 4 12 4"/></svg></div><img src="img/productos/olla.jpg" alt="Cacerola alta BRA Efficient, 20 cm" loading="lazy" onerror="this.remove()"></div>
-  <div class="cuerpo"><h3>Cacerola alta BRA Efficient, 20 cm</h3><p class="por">Fondo gordo que reparte el calor y no se agarra. En una olla fina, el membrillo se quema antes de cuajar.</p>
-  <div class="usos"><a href="membrillo.html">Carne de membrillo</a></div>
-  <a class="bt peq flecha" href="https://www.amazon.es/dp/B009U806MK?tag=elhuertodeans-21" rel="sponsored nofollow noopener" target="_blank">Verlo en Amazon </a></div>
-</article>
-<article class="ficha rev" data-cat="Ollas y conservas">
-  <div class="foto"><div class="ph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><ellipse cx="26" cy="34" rx="20" ry="12"/><path d="M45 31l15-6"/><path d="M14 33c3 3 8 4 12 4"/></svg></div><img src="img/productos/batidora.jpg" alt="Batidora de mano Braun MultiQuick 5" loading="lazy" onerror="this.remove()"></div>
-  <div class="cuerpo"><h3>Batidora de mano Braun MultiQuick 5</h3><p class="por">Pa dejar el membrillo fino de una vez, sin grumos.</p>
-  <div class="usos"><a href="membrillo.html">Carne de membrillo</a></div>
-  <a class="bt peq flecha" href="https://www.amazon.es/dp/B0D9VYRDT2?tag=elhuertodeans-21" rel="sponsored nofollow noopener" target="_blank">Verlo en Amazon </a></div>
+  <a class="bt peq flecha" href="https://www.amazon.es/dp/B00L2IB8C8" rel="sponsored nofollow noopener" target="_blank">Verlo en Amazon </a></div>
+</article><article class="ficha rev" data-cat="Utensilios">
+  <div class="foto"><div class="ph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><ellipse cx="26" cy="34" rx="20" ry="12"/><path d="M45 31l15-6"/><path d="M14 33c3 3 8 4 12 4"/></svg></div><img src="img/productos/termometro.jpg" alt="Termómetro de cocina para aceite" loading="lazy" onerror="this.remove()"></div>
+  <div class="cuerpo"><h3>Termómetro de cocina para aceite</h3><p class="por">Con él sabes si el aceite está a 160 o a 200 sin jugártela. Es la diferencia entre un buñuelo hueco y una galleta frita.</p>
+  <div class="usos"><a href="bunuelos.html">Buñuelos de viento</a></div>
+  <a class="bt peq flecha" href="https://www.amazon.es/s?k=termometro+cocina+aceite+sonda" rel="sponsored nofollow noopener" target="_blank">Verlo en Amazon </a></div>
+</article><article class="ficha rev" data-cat="Ollas y conservas">
+  <div class="foto"><div class="ph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><ellipse cx="26" cy="34" rx="20" ry="12"/><path d="M45 31l15-6"/><path d="M14 33c3 3 8 4 12 4"/></svg></div><img src="img/productos/cubitera.jpg" alt="Cubitera de silicona para congelar caldo" loading="lazy" onerror="this.remove()"></div>
+  <div class="cuerpo"><h3>Cubitera de silicona para congelar caldo</h3><p class="por">Pa tener caldo bueno siempre a mano: sacas dos cubitos pa un arroz o una sopa y no tiras ni gota.</p>
+  <div class="usos"><a href="caldo.html">Caldo de gallina de corral</a></div>
+  <a class="bt peq flecha" href="https://www.amazon.es/s?k=cubitera+silicona+con+tapa+congelar+caldo" rel="sponsored nofollow noopener" target="_blank">Verlo en Amazon </a></div>
 </article></div>
-  <p class="aviso">Algunos enlaces son de afiliado: a ti te cuesta lo mismo y yo me llevo una pequeña comisión.</p>
+  <p class="aviso">Algunos enlaces son de afiliado: a ti te cuesta lo mismo y yo me llevo una pequeña comisión. En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables.</p>
 </div></section>
 <section class="sec"><div class="ancho"><div class="recetario rev">
   <div class="portadalibro"><img src="img/recetario.jpg" alt="Portada de El recetario de Anselmo"></div>
@@ -261,9 +273,10 @@ footer b{color:#fff8ec!important}
 
 </main>
 <footer><div class="env">
-  <div class="fila"><div><b style="color:var(--tinta);font-family:Lora,Georgia,serif;font-size:1.1rem">El huerto de Anselmo</b><br>Recetas de pueblo y los aperos que de verdad uso.</div>
-  <div><a href="https://payhip.com/elhuertodeanselmo">Tienda</a><a href="https://www.instagram.com/elhuertodeanselmo/">Instagram</a><a href="#">Aviso legal</a><a href="#">Privacidad</a></div></div>
-  <p style="margin-top:22px">En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables.</p>
+  <div class="fila"><div><b style="font-family:Lora,Georgia,serif;font-size:1.1rem">El huerto de Anselmo</b><br>Recetas de pueblo y los aperos que de verdad uso.</div>
+  <div><a href="quien-es-anselmo.html">Quién soy</a><a href="contacto.html">Contacto</a><a href="https://payhip.com/elhuertodeanselmo">Tienda</a><a href="https://www.instagram.com/elhuertodeanselmo/">Instagram</a></div></div>
+  <div style="margin-top:14px"><a href="aviso-legal.html">Aviso legal</a><a href="privacidad.html">Privacidad</a><a href="cookies.html">Cookies</a></div>
+  <p style="margin-top:22px">En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables. Los enlaces a Amazon de esta web son enlaces de afiliado: a ti te cuesta lo mismo.</p>
   <p>© 2026 El huerto de Anselmo</p>
 </div></footer>
 <div class="barra"><span>El recetario de Anselmo · <b>6,70 €</b></span><a class="bt teja peq" href="https://payhip.com/elhuertodeanselmo">Lo quiero</a></div>
