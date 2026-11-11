@@ -202,6 +202,13 @@ footer b{color:#fff8ec!important}
 .cab nav{gap:20px}
 @media(max-width:860px){.vhero{grid-template-columns:1fr;gap:30px;padding-top:36px}}
 .vhero>*{min-width:0}
+footer .iconos{display:flex;flex-wrap:wrap;gap:10px}
+footer .iconos a{display:inline-flex;align-items:center;gap:8px;margin:0;padding:8px 14px 8px 10px;border-radius:999px;background:rgba(255,255,255,.07);transition:background .15s,color .15s}
+footer .iconos a:hover{background:var(--teja);color:#fff}
+footer .iconos.peq a{padding:5px 12px 5px 8px;font-size:.82rem;background:transparent}
+footer .iconos.peq a:hover{background:rgba(255,255,255,.08);color:#fff}
+.ico{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+footer .iconos.peq .ico{width:16px;height:16px}
 .ficha .foto img{object-fit:cover;padding:0;background:var(--tinta)}
 .ficha .foto .etq{position:absolute;left:10px;bottom:10px;z-index:2;font-size:.72rem;font-weight:600;background:rgba(20,14,10,.72);color:#fff;padding:4px 9px;border-radius:999px}
 </style>
@@ -278,8 +285,8 @@ footer b{color:#fff8ec!important}
 </main>
 <footer><div class="env">
   <div class="fila"><div><b style="font-family:Lora,Georgia,serif;font-size:1.1rem">El huerto de Anselmo</b><br>Recetas de pueblo y los aperos que de verdad uso.</div>
-  <div><a href="quien-es-anselmo.html">Quién soy</a><a href="contacto.html">Contacto</a><a href="https://payhip.com/elhuertodeanselmo">Tienda</a><a href="https://www.instagram.com/elhuertodeanselmo/">Instagram</a></div></div>
-  <div style="margin-top:14px"><a href="aviso-legal.html">Aviso legal</a><a href="privacidad.html">Privacidad</a><a href="cookies.html">Cookies</a></div>
+  <div class="iconos"><a href="quien-es-anselmo.html"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>Quién soy</a><a href="contacto.html"><svg class="ico" viewBox="0 0 24 24"><rect x="5" y="2.5" width="14" height="19" rx="2"/><path d="M5 7H3M5 12H3M5 17H3"/><circle cx="12" cy="10" r="2.6"/><path d="M8.2 17c.6-2 2-3 3.8-3s3.2 1 3.8 3"/></svg>Contacto</a><a href="https://payhip.com/elhuertodeanselmo"><svg class="ico" viewBox="0 0 24 24"><path d="M3 11 12 3.5 21 11"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg>Tienda</a><a href="https://www.instagram.com/elhuertodeanselmo/"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>Instagram</a></div></div>
+  <div class="iconos peq" style="margin-top:14px"><a href="aviso-legal.html"><svg class="ico" viewBox="0 0 24 24"><path d="M6 2.5h8l4 4V21.5H6z"/><path d="M14 2.5v4h4M9 12h6M9 16h6"/></svg>Aviso legal</a><a href="privacidad.html"><svg class="ico" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10.5" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>Privacidad</a><a href="cookies.html"><svg class="ico" viewBox="0 0 24 24"><path d="M21 12.5A9 9 0 1 1 11.5 3a3 3 0 0 0 3.5 3.5 3 3 0 0 0 3 3.5 3 3 0 0 0 3 2.5z"/><circle cx="8.5" cy="10" r=".9" fill="currentColor"/><circle cx="12" cy="15.5" r=".9" fill="currentColor"/><circle cx="16" cy="14" r=".9" fill="currentColor"/></svg>Cookies</a></div>
   <p style="margin-top:22px">En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables. Los enlaces a Amazon de esta web son enlaces de afiliado: a ti te cuesta lo mismo.</p>
   <p>© 2026 El huerto de Anselmo</p>
 </div></footer>
