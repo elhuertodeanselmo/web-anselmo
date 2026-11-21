@@ -211,6 +211,9 @@ footer .iconos.peq a:hover{background:rgba(255,255,255,.08);color:#fff}
 footer .iconos.peq .ico{width:16px;height:16px}
 .ficha .foto img{object-fit:cover;padding:0;background:var(--tinta)}
 .ficha .foto .etq{position:absolute;left:10px;bottom:10px;z-index:2;font-size:.72rem;font-weight:600;background:rgba(20,14,10,.72);color:#fff;padding:4px 9px;border-radius:999px}
+.cubierta .portafoto{position:relative;height:min(420px,60vh);overflow:hidden;background:var(--tinta)}
+.cubierta .portafoto::before{content:"";position:absolute;inset:-40px;background:var(--f) center/cover no-repeat;filter:blur(26px) brightness(.55)}
+.cubierta .portafoto img{position:relative;height:100%;width:auto;max-width:100%;max-height:none;margin:0 auto;object-fit:contain;box-shadow:0 10px 40px rgba(0,0,0,.45)}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "¿Por qué tus magdalenas no suben?", "description": "Magdalenas de pueblo planas y sin copete: tres trucos para que suban (batir hasta que blanquee, masa fría en la nevera y el golpe de horno a 220 °C).", "image": "https://elhuertodeanselmo.com/img/recetas/magdalenas.jpg", "inLanguage": "es", "author": {"@type": "Person", "name": "Anselmo"}, "publisher": {"@type": "Organization", "name": "El huerto de Anselmo"}, "mainEntityOfPage": "https://elhuertodeanselmo.com/magdalenas.html", "video": {"@type": "VideoObject", "name": "¿Por qué tus magdalenas no suben? El truco del pueblo", "description": "Magdalenas de pueblo planas y sin copete: tres trucos para que suban (batir hasta que blanquee, masa fría en la nevera y el golpe de horno a 220 °C).", "thumbnailUrl": "https://elhuertodeanselmo.com/img/magdalenas.jpg", "contentUrl": "https://elhuertodeanselmo.com/videos/magdalenas-completo.mp4", "uploadDate": "2026-11-17"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Por qué el azúcar por encima?", "acceptedAnswer": {"@type": "Answer", "text": "Al hornearse forma una costrita crujiente que es la de las magdalenas de pueblo de toda la vida. Una pizca en cada molde, sin pasarse."}}, {"@type": "Question", "name": "¿Cuánto tiempo puede estar la masa en la nevera?", "acceptedAnswer": {"@type": "Answer", "text": "Mínimo una hora, y si la dejas de un día para otro, mejor todavía. Cuanto más fría entre al horno, más copete."}}, {"@type": "Question", "name": "¿Con aceite o con mantequilla?", "acceptedAnswer": {"@type": "Answer", "text": "En el pueblo, con aceite de oliva suave: salen más jugosas y aguantan más días tiernas. Con mantequilla también salen, pero cambian el sabor."}}, {"@type": "Question", "name": "¿Cómo sé que están hechas?", "acceptedAnswer": {"@type": "Answer", "text": "Cuando el copete está dorado y al pinchar con un palillo sale limpio. Suelen tardar unos quince minutos, según el horno."}}]}</script>
@@ -223,7 +226,7 @@ footer .iconos.peq .ico{width:16px;height:16px}
 <main class="env">
 
 <div class="cubierta">
-  <img src="img/recetas/magdalenas.jpg" alt="¿Por qué tus magdalenas no suben?" style="object-position:50% 45%">
+  <div class="portafoto" style="--f:url(img/recetas/magdalenas.jpg)"><img src="img/recetas/magdalenas.jpg" alt="¿Por qué tus magdalenas no suben?"></div>
   <div class="banda"><div class="ancho">
     <p class="miga" style="padding:0;color:#bfb1a0"><a href="/" style="color:#bfb1a0">Inicio</a> &nbsp;/&nbsp; <a href="/#videos" style="color:#bfb1a0">Vídeos</a></p>
     <span class="eyebrow">Dulces de la abuela · Receta nº 70</span>

@@ -211,6 +211,9 @@ footer .iconos.peq a:hover{background:rgba(255,255,255,.08);color:#fff}
 footer .iconos.peq .ico{width:16px;height:16px}
 .ficha .foto img{object-fit:cover;padding:0;background:var(--tinta)}
 .ficha .foto .etq{position:absolute;left:10px;bottom:10px;z-index:2;font-size:.72rem;font-weight:600;background:rgba(20,14,10,.72);color:#fff;padding:4px 9px;border-radius:999px}
+.cubierta .portafoto{position:relative;height:min(420px,60vh);overflow:hidden;background:var(--tinta)}
+.cubierta .portafoto::before{content:"";position:absolute;inset:-40px;background:var(--f) center/cover no-repeat;filter:blur(26px) brightness(.55)}
+.cubierta .portafoto img{position:relative;height:100%;width:auto;max-width:100%;max-height:none;margin:0 auto;object-fit:contain;box-shadow:0 10px 40px rgba(0,0,0,.45)}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "La cebolla en la mesilla no te quita la tos", "description": "Tos de noche con el primer frío: por qué la cebolla en la mesilla no sirve y tres remedios caseros que sí alivian (miel, gárgaras de agua con sal y ventilar).", "image": "https://elhuertodeanselmo.com/img/recetas/tos.jpg", "inLanguage": "es", "author": {"@type": "Person", "name": "Anselmo"}, "publisher": {"@type": "Organization", "name": "El huerto de Anselmo"}, "mainEntityOfPage": "https://elhuertodeanselmo.com/tos.html", "video": {"@type": "VideoObject", "name": "La cebolla en la mesilla no te quita la tos", "description": "Tos de noche con el primer frío: por qué la cebolla en la mesilla no sirve y tres remedios caseros que sí alivian (miel, gárgaras de agua con sal y ventilar).", "thumbnailUrl": "https://elhuertodeanselmo.com/img/tos.jpg", "contentUrl": "https://elhuertodeanselmo.com/videos/tos-completo.mp4", "uploadDate": "2026-11-11"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿A partir de qué edad se puede dar miel?", "acceptedAnswer": {"@type": "Answer", "text": "A partir de un año. Antes no, nunca, ni siquiera un poco en el chupete."}}, {"@type": "Question", "name": "¿Sirve cualquier miel?", "acceptedAnswer": {"@type": "Answer", "text": "Sirve cualquier miel de verdad. Las oscuras, como la de brezo o la de castaño, tienen un sabor más fuerte; la multifloral es la más suave para tomar a cucharadas."}}, {"@type": "Question", "name": "¿La miel con limón es mejor?", "acceptedAnswer": {"@type": "Answer", "text": "El limón le da un gusto más fresco y a mucha gente le sienta bien en la garganta, pero lo que alivia la tos es sobre todo la miel."}}, {"@type": "Question", "name": "¿Y la cebolla no hace nada?", "acceptedAnswer": {"@type": "Answer", "text": "No hay pruebas de que la cebolla en la habitación quite la tos. Si te gusta el olor, allá tú, pero no dejes de hacer lo que sí ayuda."}}]}</script>
@@ -223,7 +226,7 @@ footer .iconos.peq .ico{width:16px;height:16px}
 <main class="env">
 
 <div class="cubierta">
-  <img src="img/recetas/tos.jpg" alt="La cebolla en la mesilla no te quita la tos" style="object-position:50% 45%">
+  <div class="portafoto" style="--f:url(img/recetas/tos.jpg)"><img src="img/recetas/tos.jpg" alt="La cebolla en la mesilla no te quita la tos"></div>
   <div class="banda"><div class="ancho">
     <p class="miga" style="padding:0;color:#bfb1a0"><a href="/" style="color:#bfb1a0">Inicio</a> &nbsp;/&nbsp; <a href="/#videos" style="color:#bfb1a0">Vídeos</a></p>
     <span class="eyebrow">Remedios de la abuela</span>

@@ -211,6 +211,9 @@ footer .iconos.peq a:hover{background:rgba(255,255,255,.08);color:#fff}
 footer .iconos.peq .ico{width:16px;height:16px}
 .ficha .foto img{object-fit:cover;padding:0;background:var(--tinta)}
 .ficha .foto .etq{position:absolute;left:10px;bottom:10px;z-index:2;font-size:.72rem;font-weight:600;background:rgba(20,14,10,.72);color:#fff;padding:4px 9px;border-radius:999px}
+.cubierta .portafoto{position:relative;height:min(420px,60vh);overflow:hidden;background:var(--tinta)}
+.cubierta .portafoto::before{content:"";position:absolute;inset:-40px;background:var(--f) center/cover no-repeat;filter:blur(26px) brightness(.55)}
+.cubierta .portafoto img{position:relative;height:100%;width:auto;max-width:100%;max-height:none;margin:0 auto;object-fit:contain;box-shadow:0 10px 40px rgba(0,0,0,.45)}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "3 pasos para que el membrillo cuaje", "description": "Cómo hacer carne de membrillo casera que cuaje: la pectina de pieles y pepitas, la proporción de azúcar y la prueba de la raya.", "image": "https://elhuertodeanselmo.com/img/recetas/membrillo.jpg", "inLanguage": "es", "author": {"@type": "Person", "name": "Anselmo"}, "publisher": {"@type": "Organization", "name": "El huerto de Anselmo"}, "mainEntityOfPage": "https://elhuertodeanselmo.com/membrillo.html", "video": {"@type": "VideoObject", "name": "3 pasos para que el membrillo cuaje", "description": "Cómo hacer carne de membrillo casera que cuaje: la pectina de pieles y pepitas, la proporción de azúcar y la prueba de la raya.", "thumbnailUrl": "https://elhuertodeanselmo.com/img/membrillo.jpg", "contentUrl": "https://elhuertodeanselmo.com/videos/membrillo-completo.mp4", "uploadDate": "2026-11-11"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Mi membrillo no ha cuajado, ¿lo puedo arreglar?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Devuélvelo a la cazuela, añade el zumo de otro medio limón y cuécelo otro rato a fuego bajo, removiendo, hasta que pase la prueba de la raya."}}, {"@type": "Question", "name": "¿Por qué se pone tan oscuro?", "acceptedAnswer": {"@type": "Answer", "text": "Es normal: el azúcar se carameliza con la cocción larga. Cuanto más tiempo al fuego, más oscuro y más firme. Si lo quieres más clarito, cuécelo justo lo necesario."}}, {"@type": "Question", "name": "¿Se puede hacer con menos azúcar?", "acceptedAnswer": {"@type": "Answer", "text": "Se puede bajar algo, pero cuajará peor y aguantará menos tiempo. Si lo haces, guárdalo siempre en la nevera."}}, {"@type": "Question", "name": "¿Cuánto dura el membrillo casero?", "acceptedAnswer": {"@type": "Answer", "text": "Bien tapado y en un sitio fresco, varios meses. En la nevera, envuelto en papel de horno, todavía más."}}]}</script>
@@ -223,7 +226,7 @@ footer .iconos.peq .ico{width:16px;height:16px}
 <main class="env">
 
 <div class="cubierta">
-  <img src="img/recetas/membrillo.jpg" alt="3 pasos para que el membrillo cuaje" style="object-position:50% 45%">
+  <div class="portafoto" style="--f:url(img/recetas/membrillo.jpg)"><img src="img/recetas/membrillo.jpg" alt="3 pasos para que el membrillo cuaje"></div>
   <div class="banda"><div class="ancho">
     <p class="miga" style="padding:0;color:#bfb1a0"><a href="/" style="color:#bfb1a0">Inicio</a> &nbsp;/&nbsp; <a href="/#videos" style="color:#bfb1a0">Vídeos</a></p>
     <span class="eyebrow">De la despensa · Receta nº 51</span>

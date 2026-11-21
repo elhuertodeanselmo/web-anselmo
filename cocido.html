@@ -211,6 +211,9 @@ footer .iconos.peq a:hover{background:rgba(255,255,255,.08);color:#fff}
 footer .iconos.peq .ico{width:16px;height:16px}
 .ficha .foto img{object-fit:cover;padding:0;background:var(--tinta)}
 .ficha .foto .etq{position:absolute;left:10px;bottom:10px;z-index:2;font-size:.72rem;font-weight:600;background:rgba(20,14,10,.72);color:#fff;padding:4px 9px;border-radius:999px}
+.cubierta .portafoto{position:relative;height:min(420px,60vh);overflow:hidden;background:var(--tinta)}
+.cubierta .portafoto::before{content:"";position:absolute;inset:-40px;background:var(--f) center/cover no-repeat;filter:blur(26px) brightness(.55)}
+.cubierta .portafoto img{position:relative;height:100%;width:auto;max-width:100%;max-height:none;margin:0 auto;object-fit:contain;box-shadow:0 10px 40px rgba(0,0,0,.45)}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Si echas agua fría a los garbanzos, se te ponen duros", "description": "Cocido castellano con garbanzos tiernos: remojo la víspera en agua templada con sal, a la olla con el agua ya hirviendo y, si hace falta añadir, siempre agua caliente.", "image": "https://elhuertodeanselmo.com/img/recetas/cocido.jpg", "inLanguage": "es", "author": {"@type": "Person", "name": "Anselmo"}, "publisher": {"@type": "Organization", "name": "El huerto de Anselmo"}, "mainEntityOfPage": "https://elhuertodeanselmo.com/cocido.html", "video": {"@type": "VideoObject", "name": "Si echas agua fría a los garbanzos, se te ponen duros", "description": "Cocido castellano con garbanzos tiernos: remojo la víspera en agua templada con sal, a la olla con el agua ya hirviendo y, si hace falta añadir, siempre agua caliente.", "thumbnailUrl": "https://elhuertodeanselmo.com/img/cocido.jpg", "contentUrl": "https://elhuertodeanselmo.com/videos/cocido-completo.mp4", "uploadDate": "2026-11-21"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cuánto tiempo de remojo?", "acceptedAnswer": {"@type": "Answer", "text": "De la noche a la mañana, unas 12 horas, en agua templada con un puñado de sal. Si al día siguiente han doblado su tamaño, están listos."}}, {"@type": "Question", "name": "¿Y si se me olvidó ponerlos a remojo?", "acceptedAnswer": {"@type": "Answer", "text": "El garbanzo de cocido sin remojo no se ablanda bien por mucho que cueza. Mejor dejar el cocido pa mañana o tirar de garbanzos ya cocidos, que hoy no es día de milagros."}}, {"@type": "Question", "name": "¿Pa qué la red?", "acceptedAnswer": {"@type": "Answer", "text": "Pa sacar los garbanzos enteros y de una vez a la hora de servir, sin andar pescándolos entre la carne y los huesos. Y no se pierde ninguno por el fondo."}}, {"@type": "Question", "name": "¿Olla normal o exprés?", "acceptedAnswer": {"@type": "Answer", "text": "En el pueblo, olla grande a fuego lento y sin prisa, unas tres horas. En exprés también salen, pero el caldo no coge el mismo cuerpo."}}]}</script>
@@ -223,7 +226,7 @@ footer .iconos.peq .ico{width:16px;height:16px}
 <main class="env">
 
 <div class="cubierta">
-  <img src="img/recetas/cocido.jpg" alt="Si echas agua fría a los garbanzos, se te ponen duros" style="object-position:50% 55%">
+  <div class="portafoto" style="--f:url(img/recetas/cocido.jpg)"><img src="img/recetas/cocido.jpg" alt="Si echas agua fría a los garbanzos, se te ponen duros"></div>
   <div class="banda"><div class="ancho">
     <p class="miga" style="padding:0;color:#bfb1a0"><a href="/" style="color:#bfb1a0">Inicio</a> &nbsp;/&nbsp; <a href="/#videos" style="color:#bfb1a0">Vídeos</a></p>
     <span class="eyebrow">De cuchara · Receta nº 12</span>
