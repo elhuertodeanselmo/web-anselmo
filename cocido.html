@@ -214,6 +214,16 @@ footer .iconos.peq .ico{width:16px;height:16px}
 .cubierta .portafoto{position:relative;height:min(420px,60vh);overflow:hidden;background:var(--tinta)}
 .cubierta .portafoto::before{content:"";position:absolute;inset:-40px;background:var(--f) center/cover no-repeat;filter:blur(26px) brightness(.55)}
 .cubierta .portafoto img{position:relative;height:100%;width:auto;max-width:100%;max-height:none;margin:0 auto;object-fit:contain;box-shadow:0 10px 40px rgba(0,0,0,.45)}
+#aperos .cabsec{display:block}#aperos .cabsec p{margin-top:8px}
+.fichas.solo{grid-template-columns:1fr;max-width:920px;gap:22px}
+.fichas.solo .ficha{flex-direction:row}
+.fichas.solo .ficha .foto{flex:0 0 42%;aspect-ratio:auto;min-height:320px}
+.fichas.solo .ficha .cuerpo{padding:28px 32px}
+.fichas.solo .ficha h3{font-size:1.45rem}
+.fichas.solo .ficha .por{flex:0;font-size:1rem}
+.fichas.solo .fijarse{margin:0 0 18px}.fichas.solo .fijtit{margin:0;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teja);margin-bottom:4px}
+.fichas.solo .bt{align-self:flex-start}
+@media(max-width:680px){.fichas.solo .ficha{flex-direction:column}.fichas.solo .ficha .foto{flex:none;aspect-ratio:4/3;min-height:0}.fichas.solo .ficha .cuerpo{padding:20px 22px 22px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Si echas agua fría a los garbanzos, se te ponen duros", "description": "Cocido castellano con garbanzos tiernos: remojo la víspera en agua templada con sal, a la olla con el agua ya hirviendo y, si hace falta añadir, siempre agua caliente.", "image": "https://elhuertodeanselmo.com/img/recetas/cocido.jpg", "inLanguage": "es", "author": {"@type": "Person", "name": "Anselmo"}, "publisher": {"@type": "Organization", "name": "El huerto de Anselmo"}, "mainEntityOfPage": "https://elhuertodeanselmo.com/cocido.html", "video": {"@type": "VideoObject", "name": "Si echas agua fría a los garbanzos, se te ponen duros", "description": "Cocido castellano con garbanzos tiernos: remojo la víspera en agua templada con sal, a la olla con el agua ya hirviendo y, si hace falta añadir, siempre agua caliente.", "thumbnailUrl": "https://elhuertodeanselmo.com/img/cocido.jpg", "contentUrl": "https://elhuertodeanselmo.com/videos/cocido-completo.mp4", "uploadDate": "2026-11-21"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cuánto tiempo de remojo?", "acceptedAnswer": {"@type": "Answer", "text": "De la noche a la mañana, unas 12 horas, en agua templada con un puñado de sal. Si al día siguiente han doblado su tamaño, están listos."}}, {"@type": "Question", "name": "¿Y si se me olvidó ponerlos a remojo?", "acceptedAnswer": {"@type": "Answer", "text": "El garbanzo de cocido sin remojo no se ablanda bien por mucho que cueza. Mejor dejar el cocido pa mañana o tirar de garbanzos ya cocidos, que hoy no es día de milagros."}}, {"@type": "Question", "name": "¿Pa qué la red?", "acceptedAnswer": {"@type": "Answer", "text": "Pa sacar los garbanzos enteros y de una vez a la hora de servir, sin andar pescándolos entre la carne y los huesos. Y no se pierde ninguno por el fondo."}}, {"@type": "Question", "name": "¿Olla normal o exprés?", "acceptedAnswer": {"@type": "Answer", "text": "En el pueblo, olla grande a fuego lento y sin prisa, unas tres horas. En exprés también salen, pero el caldo no coge el mismo cuerpo."}}]}</script>
@@ -254,14 +264,13 @@ footer .iconos.peq .ico{width:16px;height:16px}
 <section class="sec" id="aperos" style="padding-top:20px">
   <div class="cabsec rev"><div><span class="eyebrow" style="color:var(--teja)">Los aperos</span><h2>Lo que uso pa esto</h2></div>
   <p>La receta completa, con cantidades, está en el recetario: <b>Cocido castellano</b> (nº 12).</p></div>
-  <div class="fichas"><article class="ficha rev" data-cat="Ollas y conservas">
+  <div class="fichas solo"><article class="ficha rev" data-cat="Ollas y conservas">
   <div class="foto"><div class="ph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M10 26h44v20a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8z"/><path d="M4 28h6M54 28h6M24 20h16"/></svg></div><img src="img/productos/olla-cocido.jpg" alt="Anselmo usando: Olla grande de acero inoxidable" loading="lazy" onerror="this.remove()"><span class="etq">Así lo uso en el vídeo</span></div>
   <div class="cuerpo"><h3>Olla grande de acero inoxidable</h3><p class="por">Olla de acero inoxidable de buena capacidad, que vale pa inducción. Cabe el cocido entero, con sus huesos y su red de garbanzos.</p>
-  <div class="usos"><a href="cocido.html">Cocido castellano</a></div>
+  <p class='fijtit'>En qué fijarte si lo compras</p><ul class='fijarse'><li>Grande de verdad: pa un cocido de casa, mínimo siete u ocho litros.</li><li>Fondo grueso, que reparte el calor y no se agarra en tres horas de chup-chup.</li><li>Apta pa todos los fuegos, inducción incluida.</li><li>Tapa que cierre bien, pa que no se vaya el caldo en vapor.</li></ul>
   <a class="bt peq flecha" href="https://www.amazon.es/dp/B08X22TTFW?tag=elhuertodea0c-21" rel="sponsored nofollow noopener" target="_blank">Verlo en Amazon </a></div>
 </article></div>
-  <div class="articulo" style="padding-top:20px"><h2 style="margin-top:.6em">En qué fijarte si lo compras</h2><h3 style='margin-top:1.2em'>Olla grande de acero inoxidable</h3><ul class='fijarse'><li>Grande de verdad: pa un cocido de casa, mínimo siete u ocho litros.</li><li>Fondo grueso, que reparte el calor y no se agarra en tres horas de chup-chup.</li><li>Apta pa todos los fuegos, inducción incluida.</li><li>Tapa que cierre bien, pa que no se vaya el caldo en vapor.</li></ul>
-  <p class="aviso">Si compras a través de este enlace, a ti te cuesta lo mismo y yo me llevo una pequeña comisión. En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables.</p></div>
+  <p class="aviso">Si compras a través de este enlace, a ti te cuesta lo mismo y yo me llevo una pequeña comisión. En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables.</p>
 </section>
 <article class="articulo preg">
   <h2>Lo que más me preguntáis</h2>
