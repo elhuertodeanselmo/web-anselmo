@@ -211,12 +211,82 @@ footer .iconos.peq a:hover{background:rgba(255,255,255,.08);color:#fff}
 footer .iconos.peq .ico{width:16px;height:16px}
 .ficha .foto img{object-fit:cover;padding:0;background:var(--tinta)}
 .ficha .foto .etq{position:absolute;left:10px;bottom:10px;z-index:2;font-size:.72rem;font-weight:600;background:rgba(20,14,10,.72);color:#fff;padding:4px 9px;border-radius:999px}
+
+/* ===== rediseño 2026-11-22 ===== */
+.redes-cab{display:inline-flex;gap:2px;align-items:center}
+.redes-cab a{display:inline-flex;padding:6px;border-radius:10px;color:var(--suave)}
+.redes-cab a:hover{background:var(--crema);color:var(--tinta)}
+.redes-cab .ico{width:19px;height:19px}
+@media(max-width:980px){.cab nav{gap:14px}.cab nav a{font-size:.9rem}}
+@media(max-width:720px){.redes-cab{gap:0}.redes-cab a{padding:5px}}
+footer .pie-tit{margin:0 0 8px;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:#8f8272}
+footer .pie-cats{margin:14px 0 0;line-height:1.9}footer .pie-cats a{margin:0}
+.redes{display:flex;flex-wrap:wrap;gap:10px}
+.redes a{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:600;font-size:.95rem;padding:.7em 1.15em;border-radius:12px;background:#fff;border:1px solid var(--linea);color:var(--tinta);transition:transform .15s,background .15s}
+.redes a:hover{transform:translateY(-1px);background:var(--crema)}
+.redes.oscuro a{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18);color:#fff8ec}
+.redes.oscuro a:hover{background:var(--teja);border-color:var(--teja)}
+.franja-redes{background:var(--crema);border-bottom:1px solid var(--linea)}
+.franja-redes .ancho{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-top:22px;padding-bottom:22px}
+.franja-redes p{margin:0;font-family:Lora,Georgia,serif;font-style:italic;font-size:1.12rem}
+.sigueme{background:var(--tinta);color:#efe6d8;border-radius:28px;padding:clamp(26px,4vw,40px);display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin:10px 0 0}
+.sigueme h2{color:#fff8ec;margin:0 0 .2em;font-size:clamp(1.5rem,3vw,2rem)}.sigueme p{margin:0;color:#cdbfad}
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:820px){.cats{grid-template-columns:1fr}}
+.cat{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:260px;border-radius:var(--radio);overflow:hidden;text-decoration:none;color:#fff;box-shadow:var(--sombra);transition:transform .2s}
+.cat:hover{transform:translateY(-3px)}
+.cat img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cat::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(15,10,6,.88),rgba(15,10,6,.1) 70%)}
+.cat div{position:relative;z-index:1;padding:22px}
+.cat h3{color:#fff;font-size:1.45rem;margin:0 0 4px}.cat p{margin:0;color:#e8dccb;font-size:.95rem}
+.cat small{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,.18);padding:4px 9px;border-radius:999px;margin-bottom:10px}
+.listav{display:grid;gap:16px}
+.itemv{display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:center;background:#fff;border:1px solid var(--linea);border-radius:var(--radio);padding:14px;text-decoration:none;color:inherit;box-shadow:var(--sombra);transition:transform .2s}
+.itemv:hover{transform:translateY(-2px)}
+.itemv img{width:150px;aspect-ratio:9/16;object-fit:cover;border-radius:14px;display:block}
+.itemv h2{font-size:clamp(1.25rem,2.4vw,1.6rem);margin:.15em 0 .3em}
+.itemv p{margin:0 0 10px;color:var(--suave)}.itemv .ver{font-weight:600;color:var(--teja)}
+@media(max-width:560px){.itemv{grid-template-columns:96px 1fr;gap:14px}.itemv img{width:96px}.itemv p{font-size:.92rem}}
+.invita{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;background:#fff;border:1px solid var(--linea);border-radius:28px;padding:clamp(24px,4vw,44px);box-shadow:var(--sombra)}
+.invita ul{margin:12px 0 0;padding-left:1.1em;color:var(--suave)}
+@media(max-width:760px){.invita{grid-template-columns:1fr}}
+.paginas{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.paginas img{width:100%;border-radius:8px;box-shadow:0 12px 30px -12px rgba(40,25,10,.4);display:block;background:#fff}
+@media(max-width:820px){.paginas{grid-template-columns:1fr 1fr}}
+.secs{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.secs details{background:#fff;border:1px solid var(--linea);border-radius:16px;padding:14px 18px}
+.secs summary{cursor:pointer;font-weight:600}.secs summary small{color:var(--suave);font-weight:500}
+.secs ol{margin:10px 0 0;padding-left:2.2em;color:#3d342d;font-size:.95rem}
+.pasos3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:p}
+.pasos3 div{background:#fff;border:1px solid var(--linea);border-radius:18px;padding:20px}
+.pasos3 b{display:block;font-family:Lora,Georgia,serif;font-size:1.1rem;margin-bottom:4px}
+@media(max-width:760px){.pasos3{grid-template-columns:1fr}}
+.cifras{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cifra{background:#fff;border:1px solid var(--linea);border-radius:var(--radio);overflow:hidden;box-shadow:var(--sombra)}
+.cifra video{width:100%;aspect-ratio:9/16;object-fit:cover;display:block;background:var(--tinta)}
+.cifra .c{padding:16px 18px}.cifra h3{margin:0 0 6px}
+.cifra ul{list-style:none;padding:0;margin:0;font-size:.93rem;color:var(--suave)}.cifra li b{color:var(--tinta)}
+@media(max-width:820px){.cifras{grid-template-columns:1fr;max-width:380px;margin:0 auto}}
+.formatos{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.formatos div{background:#fff;border:1px solid var(--linea);border-radius:18px;padding:20px}
+.formatos b{display:block;font-family:Lora,Georgia,serif;font-size:1.12rem;margin-bottom:4px}
+.formatos p{margin:0;color:var(--suave);font-size:.95rem}
+.etiquetas{display:flex;flex-wrap:wrap;gap:8px}.etiquetas span{background:var(--crema);color:var(--oliva);font-weight:600;font-size:.88rem;padding:6px 12px;border-radius:999px}
+.form{background:#fff;border:1px solid var(--linea);border-radius:24px;padding:clamp(20px,3vw,32px);display:grid;gap:14px;box-shadow:var(--sombra)}
+.form .dos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:620px){.form .dos{grid-template-columns:1fr}}
+.form label{display:grid;gap:6px;font-weight:600;font-size:.92rem}
+.form input,.form select,.form textarea{font:inherit;font-weight:400;padding:.75em .9em;border:1px solid var(--crema2);border-radius:12px;background:var(--fondo);color:var(--tinta)}
+.form input:focus,.form select:focus,.form textarea:focus{outline:2px solid var(--teja);outline-offset:1px}
+.form textarea{min-height:130px;resize:vertical}
+.form .nota-f{font-size:.85rem;color:var(--suave);margin:0}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://elhuertodeanselmo.com/"}, {"@type": "ListItem", "position": 2, "name": "Los aperos", "item": "https://elhuertodeanselmo.com/despensa.html"}]}</script>
 </head>
 <body>
 <header class="cab"><div class="env">
   <a class="marca" href="/">El huerto de <span>Anselmo</span></a>
-  <nav><a class="ocultable" href="/#videos">Vídeos</a><a class="ocultable" href="despensa.html">Los aperos</a><a class="ocultable" href="quien-es-anselmo.html">Quién soy</a><a class="bt teja peq" href="https://payhip.com/b/u5wPU">El recetario</a></nav>
+  <nav><a class="ocultable" href="/#videos">Vídeos</a><a class="ocultable" href="recetas-de-pueblo.html">Recetas</a><a class="ocultable" href="trucos-de-cocina.html">Trucos</a><a class="ocultable" href="despensa.html">Los aperos</a><a class="ocultable" href="colabora.html">Colabora</a><span class="redes-cab"><a href="https://www.instagram.com/elhuertodeanselmo/" aria-label="Anselmo en Instagram" rel="noopener" target="_blank"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg></a><a href="https://www.tiktok.com/@elhuertodeanselmo" aria-label="Anselmo en TikTok" rel="noopener" target="_blank"><svg class="ico" viewBox="0 0 24 24"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.6 2.2 4.4 5 4.6"/></svg></a><a href="https://www.youtube.com/@elhuertodeanselmo" aria-label="Anselmo en YouTube" rel="noopener" target="_blank"><svg class="ico" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.2v5.6l4.8-2.8z" fill="currentColor" stroke="none"/></svg></a></span><a class="bt teja peq" href="recetario.html">El recetario</a></nav>
 </div></header>
 <main class="env">
 
@@ -226,63 +296,63 @@ footer .iconos.peq .ico{width:16px;height:16px}
   <p style="font-family:Lora,Georgia,serif;font-style:italic;font-size:1.2rem;margin:0">Un apero por vídeo, el que de verdad hace falta. Lo que no uso, aquí no está.</p>
 </div></div>
 <section class="sec"><div class="ancho">
-  <div class="filtros"><button data-cat="todo" aria-pressed="true">Todo</button><button data-cat="Sartenes y lumbre" aria-pressed="false">Sartenes y lumbre</button><button data-cat="Ollas y conservas" aria-pressed="false">Ollas y conservas</button><button data-cat="Utensilios" aria-pressed="false">Utensilios</button><button data-cat="Pa el coche" aria-pressed="false">Pa el coche</button><button data-cat="Despensa" aria-pressed="false">Despensa</button></div>
-  <div class="fichas"><article class="ficha rev" data-cat="Sartenes y lumbre">
+  <div class="filtros"><button data-cat="todo" aria-pressed="true">Todo</button><button data-cat="Lumbre y sartenes" aria-pressed="false">Lumbre y sartenes</button><button data-cat="Ollas y cocina" aria-pressed="false">Ollas y cocina</button><button data-cat="Pa la casa y el coche" aria-pressed="false">Pa la casa y el coche</button></div>
+  <div class="fichas"><article class="ficha rev" data-cat="Lumbre y sartenes">
   <div class="foto"><div class="ph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><ellipse cx="26" cy="34" rx="20" ry="12"/><path d="M45 31l15-6"/><path d="M14 33c3 3 8 4 12 4"/></svg></div><img src="img/productos/castanera.jpg" alt="Anselmo usando: Sartén castañera perforada Imex El Zorro" loading="lazy" onerror="this.remove()"><span class="etq">Así lo uso en el vídeo</span></div>
   <div class="cuerpo"><h3>Sartén castañera perforada Imex El Zorro</h3><p class="por">La de toda la vida, con sus agujeros pa que el fuego toque la castaña. Vale pa gas y pa la lumbre.</p>
-  <div class="usos"><a href="castanas.html">Castañas asadas</a></div>
+  <div class="usos"><span style="font-size:.75rem;color:var(--suave);align-self:center">Sale en:</span><a href="castanas.html">Castañas asadas</a></div>
   <a class="bt peq flecha" href="https://www.amazon.es/dp/B018Z13DWM?tag=elhuertodea0c-21" rel="sponsored nofollow noopener" target="_blank">Verlo en Amazon </a></div>
-</article><article class="ficha rev" data-cat="Ollas y conservas">
+</article><article class="ficha rev" data-cat="Ollas y cocina">
   <div class="foto"><div class="ph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><ellipse cx="26" cy="34" rx="20" ry="12"/><path d="M45 31l15-6"/><path d="M14 33c3 3 8 4 12 4"/></svg></div><img src="img/productos/olla.jpg" alt="Anselmo usando: Cacerola alta BRA Efficient, 20 cm" loading="lazy" onerror="this.remove()"><span class="etq">Así lo uso en el vídeo</span></div>
   <div class="cuerpo"><h3>Cacerola alta BRA Efficient, 20 cm</h3><p class="por">Fondo gordo que reparte el calor y no se agarra. En una olla fina, el membrillo se quema antes de cuajar.</p>
-  <div class="usos"><a href="membrillo.html">Carne de membrillo</a></div>
+  <div class="usos"><span style="font-size:.75rem;color:var(--suave);align-self:center">Sale en:</span><a href="membrillo.html">Carne de membrillo</a></div>
   <a class="bt peq flecha" href="https://www.amazon.es/dp/B009U806MK?tag=elhuertodea0c-21" rel="sponsored nofollow noopener" target="_blank">Verlo en Amazon </a></div>
-</article><article class="ficha rev" data-cat="Utensilios">
+</article><article class="ficha rev" data-cat="Ollas y cocina">
   <div class="foto"><div class="ph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><ellipse cx="26" cy="34" rx="20" ry="12"/><path d="M45 31l15-6"/><path d="M14 33c3 3 8 4 12 4"/></svg></div><img src="img/productos/termometro.jpg" alt="Anselmo usando: Termómetro de cocina digital DOQAUS" loading="lazy" onerror="this.remove()"><span class="etq">Así lo uso en el vídeo</span></div>
   <div class="cuerpo"><h3>Termómetro de cocina digital DOQAUS</h3><p class="por">Con él sabes si el aceite está a 160 o a 200 sin jugártela. Es la diferencia entre un buñuelo hueco y una galleta frita.</p>
-  <div class="usos"><a href="bunuelos.html">Buñuelos de viento</a></div>
+  <div class="usos"><span style="font-size:.75rem;color:var(--suave);align-self:center">Sale en:</span><a href="bunuelos.html">Buñuelos de viento</a></div>
   <a class="bt peq flecha" href="https://www.amazon.es/dp/B07WKKS4HB?tag=elhuertodea0c-21" rel="sponsored nofollow noopener" target="_blank">Verlo en Amazon </a></div>
-</article><article class="ficha rev" data-cat="Sartenes y lumbre">
+</article><article class="ficha rev" data-cat="Lumbre y sartenes">
   <div class="foto"><div class="ph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><ellipse cx="26" cy="34" rx="20" ry="12"/><path d="M45 31l15-6"/><path d="M14 33c3 3 8 4 12 4"/></svg></div><img src="img/productos/sarten-hierro.jpg" alt="Anselmo usando: Sartén de hierro fundido presazonada YUTANN" loading="lazy" onerror="this.remove()"><span class="etq">Así lo uso en el vídeo</span></div>
   <div class="cuerpo"><h3>Sartén de hierro fundido presazonada YUTANN</h3><p class="por">Aguanta el fuego fuerte del final sin estropearse y reparte el calor parejo. Pa los torreznos, como ninguna.</p>
-  <div class="usos"><a href="torreznos.html">Torreznos crujientes</a></div>
+  <div class="usos"><span style="font-size:.75rem;color:var(--suave);align-self:center">Sale en:</span><a href="torreznos.html">Torreznos crujientes</a></div>
   <a class="bt peq flecha" href="https://www.amazon.es/dp/B0H3TMWFP6?tag=elhuertodea0c-21" rel="sponsored nofollow noopener" target="_blank">Verlo en Amazon </a></div>
-</article><article class="ficha rev" data-cat="Ollas y conservas">
+</article><article class="ficha rev" data-cat="Ollas y cocina">
   <div class="foto"><div class="ph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><ellipse cx="26" cy="34" rx="20" ry="12"/><path d="M45 31l15-6"/><path d="M14 33c3 3 8 4 12 4"/></svg></div><img src="img/productos/cubitera.jpg" alt="Anselmo usando: Cubitera de silicona extragrande para congelar" loading="lazy" onerror="this.remove()"><span class="etq">Así lo uso en el vídeo</span></div>
   <div class="cuerpo"><h3>Cubitera de silicona extragrande para congelar</h3><p class="por">Pa tener caldo bueno siempre a mano: sacas dos cubitos pa un arroz o una sopa y no tiras ni gota.</p>
-  <div class="usos"><a href="caldo.html">Caldo de gallina de corral</a></div>
+  <div class="usos"><span style="font-size:.75rem;color:var(--suave);align-self:center">Sale en:</span><a href="caldo.html">Caldo de gallina de corral</a></div>
   <a class="bt peq flecha" href="https://www.amazon.es/dp/B0H6MHKKQW?tag=elhuertodea0c-21" rel="sponsored nofollow noopener" target="_blank">Verlo en Amazon </a></div>
-</article><article class="ficha rev" data-cat="Sartenes y lumbre">
+</article><article class="ficha rev" data-cat="Lumbre y sartenes">
   <div class="foto"><div class="ph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><ellipse cx="26" cy="34" rx="20" ry="12"/><path d="M45 31l15-6"/><path d="M14 33c3 3 8 4 12 4"/></svg></div><img src="img/productos/sarten-tortilla.jpg" alt="Anselmo usando: Sartén Tefal de acero inoxidable con antiadherente" loading="lazy" onerror="this.remove()"><span class="etq">Así lo uso en el vídeo</span></div>
   <div class="cuerpo"><h3>Sartén Tefal de acero inoxidable con antiadherente</h3><p class="por">Pa darle la vuelta sin miedo y que salga entera. Una sartén que se agarra te arruina la mejor tortilla.</p>
-  <div class="usos"><a href="tortilla.html">Tortilla de patatas para el campo</a></div>
+  <div class="usos"><span style="font-size:.75rem;color:var(--suave);align-self:center">Sale en:</span><a href="tortilla.html">Tortilla de patatas para el campo</a></div>
   <a class="bt peq flecha" href="https://www.amazon.es/dp/B0D36DNPXN?tag=elhuertodea0c-21" rel="sponsored nofollow noopener" target="_blank">Verlo en Amazon </a></div>
-</article><article class="ficha rev" data-cat="Pa el coche">
+</article><article class="ficha rev" data-cat="Pa la casa y el coche">
   <div class="foto"><div class="ph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><ellipse cx="26" cy="34" rx="20" ry="12"/><path d="M45 31l15-6"/><path d="M14 33c3 3 8 4 12 4"/></svg></div><img src="img/productos/rasqueta.jpg" alt="Anselmo usando: Rasqueta de hielo LICARGO con cuchilla de latón" loading="lazy" onerror="this.remove()"><span class="etq">Así lo uso en el vídeo</span></div>
   <div class="cuerpo"><h3>Rasqueta de hielo LICARGO con cuchilla de latón</h3><p class="por">La cuchilla de latón es más blanda que el cristal: rompe el hielo duro en pocas pasadas sin rayar la luna.</p>
-  <div class="usos"><a href="parabrisas.html">Parabrisas helado</a></div>
+  <div class="usos"><span style="font-size:.75rem;color:var(--suave);align-self:center">Sale en:</span><a href="parabrisas.html">Parabrisas helado</a></div>
   <a class="bt peq flecha" href="https://www.amazon.es/dp/B0DDQ5422W?tag=elhuertodea0c-21" rel="sponsored nofollow noopener" target="_blank">Verlo en Amazon </a></div>
-</article><article class="ficha rev" data-cat="Pa el coche">
+</article><article class="ficha rev" data-cat="Pa la casa y el coche">
   <div class="foto"><div class="ph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><ellipse cx="26" cy="34" rx="20" ry="12"/><path d="M45 31l15-6"/><path d="M14 33c3 3 8 4 12 4"/></svg></div><img src="img/productos/pulverizador.jpg" alt="Anselmo usando: Pulverizador regulable antifugas Quelcc" loading="lazy" onerror="this.remove()"><span class="etq">Así lo uso en el vídeo</span></div>
   <div class="cuerpo"><h3>Pulverizador regulable antifugas Quelcc</h3><p class="por">Lo llenas con dos partes de alcohol y una de agua, y en las mañanas de escarcha quitas el hielo en un momento.</p>
-  <div class="usos"><a href="parabrisas.html">Parabrisas helado</a></div>
+  <div class="usos"><span style="font-size:.75rem;color:var(--suave);align-self:center">Sale en:</span><a href="parabrisas.html">Parabrisas helado</a></div>
   <a class="bt peq flecha" href="https://www.amazon.es/dp/B0FZ9GM8JK?tag=elhuertodea0c-21" rel="sponsored nofollow noopener" target="_blank">Verlo en Amazon </a></div>
-</article><article class="ficha rev" data-cat="Despensa">
+</article><article class="ficha rev" data-cat="Pa la casa y el coche">
   <div class="foto"><div class="ph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><ellipse cx="26" cy="34" rx="20" ry="12"/><path d="M45 31l15-6"/><path d="M14 33c3 3 8 4 12 4"/></svg></div><img src="img/productos/miel.jpg" alt="Anselmo usando: Miel artesana multifloral de Asturias" loading="lazy" onerror="this.remove()"><span class="etq">Así lo uso en el vídeo</span></div>
   <div class="cuerpo"><h3>Miel artesana multifloral de Asturias</h3><p class="por">Miel de apicultor, de la de verdad. Una cucharada antes de dormir y la garganta lo agradece.</p>
-  <div class="usos"><a href="tos.html">Tos de noche</a></div>
+  <div class="usos"><span style="font-size:.75rem;color:var(--suave);align-self:center">Sale en:</span><a href="tos.html">Tos de noche</a></div>
   <a class="bt peq flecha" href="https://www.amazon.es/dp/B0GH98VNFH?tag=elhuertodea0c-21" rel="sponsored nofollow noopener" target="_blank">Verlo en Amazon </a></div>
 </article>
-<article class="ficha rev" data-cat="Utensilios">
+<article class="ficha rev" data-cat="Ollas y cocina">
   <div class="foto"><div class="ph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="6" y="18" width="52" height="30" rx="4"/><circle cx="19" cy="33" r="6"/><circle cx="32" cy="33" r="6"/><circle cx="45" cy="33" r="6"/></svg></div><img src="img/productos/molde-magdalenas.jpg" alt="Anselmo usando: Molde antiadherente para magdalenas" loading="lazy" onerror="this.remove()"><span class="etq">Así lo uso en el vídeo</span></div>
   <div class="cuerpo"><h3>Molde antiadherente para magdalenas</h3><p class="por">Molde de metal antiadherente, de los de toda la vida. Reparte bien el calor y las magdalenas salen sin pegarse.</p>
-  <div class="usos"><a href="magdalenas.html">Magdalenas de pueblo</a></div>
+  <div class="usos"><span style="font-size:.75rem;color:var(--suave);align-self:center">Sale en:</span><a href="magdalenas.html">Magdalenas de pueblo</a></div>
   <a class="bt peq flecha" href="https://www.amazon.es/dp/B0F5WJH46R?tag=elhuertodea0c-21" rel="sponsored nofollow noopener" target="_blank">Verlo en Amazon </a></div>
 </article>
-<article class="ficha rev" data-cat="Ollas y conservas">
+<article class="ficha rev" data-cat="Ollas y cocina">
   <div class="foto"><div class="ph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M10 26h44v20a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8z"/><path d="M4 28h6M54 28h6M24 20h16"/></svg></div><img src="img/productos/olla-cocido.jpg" alt="Anselmo usando: Olla grande de acero inoxidable" loading="lazy" onerror="this.remove()"><span class="etq">Así lo uso en el vídeo</span></div>
   <div class="cuerpo"><h3>Olla grande de acero inoxidable</h3><p class="por">Olla de acero inoxidable de buena capacidad, que vale pa inducción. Cabe el cocido entero, con sus huesos y su red de garbanzos.</p>
-  <div class="usos"><a href="cocido.html">Cocido castellano</a></div>
+  <div class="usos"><span style="font-size:.75rem;color:var(--suave);align-self:center">Sale en:</span><a href="cocido.html">Cocido castellano</a></div>
   <a class="bt peq flecha" href="https://www.amazon.es/dp/B08X22TTFW?tag=elhuertodea0c-21" rel="sponsored nofollow noopener" target="_blank">Verlo en Amazon </a></div>
 </article></div>
   <p class="aviso">Algunos enlaces son de afiliado: a ti te cuesta lo mismo y yo me llevo una pequeña comisión. En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables.</p>
@@ -298,8 +368,8 @@ footer .iconos.peq .ico{width:16px;height:16px}
 
 </main>
 <footer><div class="env">
-  <div class="fila"><div><b style="font-family:Lora,Georgia,serif;font-size:1.1rem">El huerto de Anselmo</b><br>Recetas de pueblo y los aperos que de verdad uso.</div>
-  <div class="iconos"><a href="quien-es-anselmo.html"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>Quién soy</a><a href="contacto.html"><svg class="ico" viewBox="0 0 24 24"><rect x="5" y="2.5" width="14" height="19" rx="2"/><path d="M5 7H3M5 12H3M5 17H3"/><circle cx="12" cy="10" r="2.6"/><path d="M8.2 17c.6-2 2-3 3.8-3s3.2 1 3.8 3"/></svg>Contacto</a><a href="https://payhip.com/elhuertodeanselmo"><svg class="ico" viewBox="0 0 24 24"><path d="M3 11 12 3.5 21 11"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg>Tienda</a><a href="https://www.instagram.com/elhuertodeanselmo/"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>Instagram</a></div></div>
+  <div class="fila"><div><b style="font-family:Lora,Georgia,serif;font-size:1.1rem">El huerto de Anselmo</b><br>Lo que en la ciudad no te enseñan.<p class="pie-cats"><a href="recetas-de-pueblo.html">Recetas de pueblo</a> · <a href="trucos-de-cocina.html">Trucos de cocina</a> · <a href="trucos-para-la-casa.html">Trucos para la casa</a> · <a href="despensa.html">Los aperos</a></p></div>
+  <div><p class="pie-tit">Sígueme</p><div class="iconos"><a href="https://www.instagram.com/elhuertodeanselmo/" rel="noopener" target="_blank"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>Instagram</a><a href="https://www.tiktok.com/@elhuertodeanselmo" rel="noopener" target="_blank"><svg class="ico" viewBox="0 0 24 24"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.6 2.2 4.4 5 4.6"/></svg>TikTok</a><a href="https://www.youtube.com/@elhuertodeanselmo" rel="noopener" target="_blank"><svg class="ico" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.2v5.6l4.8-2.8z" fill="currentColor" stroke="none"/></svg>YouTube</a></div><p class="pie-tit" style="margin-top:16px">El huerto</p><div class="iconos"><a href="quien-es-anselmo.html"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>Quién soy</a><a href="recetario.html"><svg class="ico" viewBox="0 0 24 24"><path d="M4 4.5h6.5a2.5 2.5 0 0 1 2.5 2.5v13a2 2 0 0 0-2-2H4z"/><path d="M20 4.5h-6.5A2.5 2.5 0 0 0 11 7v13a2 2 0 0 1 2-2h7z"/></svg>El recetario</a><a href="colabora.html"><svg class="ico" viewBox="0 0 24 24"><path d="M3 12.5 7.5 8l4 3 3-2.5L21 13"/><path d="M7.5 15.5 10 18l1.5-1.5M10.5 13l3 3 1.5-1.5M13 11l3 3"/></svg>Colabora</a><a href="contacto.html"><svg class="ico" viewBox="0 0 24 24"><rect x="5" y="2.5" width="14" height="19" rx="2"/><path d="M5 7H3M5 12H3M5 17H3"/><circle cx="12" cy="10" r="2.6"/><path d="M8.2 17c.6-2 2-3 3.8-3s3.2 1 3.8 3"/></svg>Contacto</a><a href="https://payhip.com/elhuertodeanselmo"><svg class="ico" viewBox="0 0 24 24"><path d="M3 11 12 3.5 21 11"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg>Tienda</a></div></div></div>
   <div class="iconos peq" style="margin-top:14px"><a href="aviso-legal.html"><svg class="ico" viewBox="0 0 24 24"><path d="M6 2.5h8l4 4V21.5H6z"/><path d="M14 2.5v4h4M9 12h6M9 16h6"/></svg>Aviso legal</a><a href="privacidad.html"><svg class="ico" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10.5" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>Privacidad</a><a href="cookies.html"><svg class="ico" viewBox="0 0 24 24"><path d="M21 12.5A9 9 0 1 1 11.5 3a3 3 0 0 0 3.5 3.5 3 3 0 0 0 3 3.5 3 3 0 0 0 3 2.5z"/><circle cx="8.5" cy="10" r=".9" fill="currentColor"/><circle cx="12" cy="15.5" r=".9" fill="currentColor"/><circle cx="16" cy="14" r=".9" fill="currentColor"/></svg>Cookies</a></div>
   <p style="margin-top:22px">En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables. Los enlaces a Amazon de esta web son enlaces de afiliado: a ti te cuesta lo mismo.</p>
   <p>© 2026 El huerto de Anselmo</p>
