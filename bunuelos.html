@@ -211,9 +211,6 @@ footer .iconos.peq a:hover{background:rgba(255,255,255,.08);color:#fff}
 footer .iconos.peq .ico{width:16px;height:16px}
 .ficha .foto img{object-fit:cover;padding:0;background:var(--tinta)}
 .ficha .foto .etq{position:absolute;left:10px;bottom:10px;z-index:2;font-size:.72rem;font-weight:600;background:rgba(20,14,10,.72);color:#fff;padding:4px 9px;border-radius:999px}
-.cubierta .portafoto{position:relative;height:min(420px,60vh);overflow:hidden;background:var(--tinta)}
-.cubierta .portafoto::before{content:"";position:absolute;inset:-40px;background:var(--f) center/cover no-repeat;filter:blur(26px) brightness(.55)}
-.cubierta .portafoto img{position:relative;height:100%;width:auto;max-width:100%;max-height:none;margin:0 auto;object-fit:contain;box-shadow:0 10px 40px rgba(0,0,0,.45)}
 #aperos .cabsec{display:block}#aperos .cabsec p{margin-top:8px}
 .fichas.solo{grid-template-columns:1fr;max-width:920px;gap:22px}
 .fichas.solo .ficha{flex-direction:row}
@@ -224,6 +221,7 @@ footer .iconos.peq .ico{width:16px;height:16px}
 .fichas.solo .fijarse{margin:0 0 18px}.fichas.solo .fijtit{margin:0;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teja);margin-bottom:4px}
 .fichas.solo .bt{align-self:flex-start}
 @media(max-width:680px){.fichas.solo .ficha{flex-direction:column}.fichas.solo .ficha .foto{flex:none;aspect-ratio:4/3;min-height:0}.fichas.solo .ficha .cuerpo{padding:20px 22px 22px}}
+.cubierta .banda{padding:46px 0 44px}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Por qué tus buñuelos de viento no se inflan", "description": "Buñuelos de viento que se inflan: cómo hacer la masa escaldada, cuándo echar los huevos y a qué temperatura freírlos.", "image": "https://elhuertodeanselmo.com/img/recetas/bunuelos.jpg", "inLanguage": "es", "author": {"@type": "Person", "name": "Anselmo"}, "publisher": {"@type": "Organization", "name": "El huerto de Anselmo"}, "mainEntityOfPage": "https://elhuertodeanselmo.com/bunuelos.html", "video": {"@type": "VideoObject", "name": "Por qué tus buñuelos de viento no se inflan", "description": "Buñuelos de viento que se inflan: cómo hacer la masa escaldada, cuándo echar los huevos y a qué temperatura freírlos.", "thumbnailUrl": "https://elhuertodeanselmo.com/img/bunuelos.jpg", "contentUrl": "https://elhuertodeanselmo.com/videos/bunuelos-completo.mp4", "uploadDate": "2026-11-11"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Con qué se rellenan los buñuelos de viento?", "acceptedAnswer": {"@type": "Answer", "text": "Con crema pastelera, nata montada o trufa. Rellénalos con una manga al servirlos, no antes, que se ablandan."}}, {"@type": "Question", "name": "¿Cómo sé la temperatura del aceite sin termómetro?", "acceptedAnswer": {"@type": "Answer", "text": "Echa una bolita de masa: si sube despacio a la superficie con burbujas suaves, está bien. Si se tuesta en segundos, demasiado caliente. Pero con termómetro no hay que adivinar."}}, {"@type": "Question", "name": "¿Se pueden hacer al horno?", "acceptedAnswer": {"@type": "Answer", "text": "Al horno salen profiteroles, que es la misma masa: a 200 °C unos 20–25 minutos sin abrir la puerta. Están ricos, pero no son buñuelos."}}, {"@type": "Question", "name": "¿Cuándo se comen?", "acceptedAnswer": {"@type": "Answer", "text": "Son típicos de Todos los Santos, pero en casa se hacen cuando apetecen. Recién hechos están mucho mejor; de un día para otro se ponen blandos."}}]}</script>
@@ -236,7 +234,6 @@ footer .iconos.peq .ico{width:16px;height:16px}
 <main class="env">
 
 <div class="cubierta">
-  <div class="portafoto" style="--f:url(img/recetas/bunuelos.jpg)"><img src="img/recetas/bunuelos.jpg" alt="Por qué tus buñuelos de viento no se inflan"></div>
   <div class="banda"><div class="ancho">
     <p class="miga" style="padding:0;color:#bfb1a0"><a href="/" style="color:#bfb1a0">Inicio</a> &nbsp;/&nbsp; <a href="/#videos" style="color:#bfb1a0">Vídeos</a></p>
     <span class="eyebrow">Dulces de la abuela · Receta nº 67</span>

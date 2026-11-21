@@ -211,9 +211,6 @@ footer .iconos.peq a:hover{background:rgba(255,255,255,.08);color:#fff}
 footer .iconos.peq .ico{width:16px;height:16px}
 .ficha .foto img{object-fit:cover;padding:0;background:var(--tinta)}
 .ficha .foto .etq{position:absolute;left:10px;bottom:10px;z-index:2;font-size:.72rem;font-weight:600;background:rgba(20,14,10,.72);color:#fff;padding:4px 9px;border-radius:999px}
-.cubierta .portafoto{position:relative;height:min(420px,60vh);overflow:hidden;background:var(--tinta)}
-.cubierta .portafoto::before{content:"";position:absolute;inset:-40px;background:var(--f) center/cover no-repeat;filter:blur(26px) brightness(.55)}
-.cubierta .portafoto img{position:relative;height:100%;width:auto;max-width:100%;max-height:none;margin:0 auto;object-fit:contain;box-shadow:0 10px 40px rgba(0,0,0,.45)}
 #aperos .cabsec{display:block}#aperos .cabsec p{margin-top:8px}
 .fichas.solo{grid-template-columns:1fr;max-width:920px;gap:22px}
 .fichas.solo .ficha{flex-direction:row}
@@ -224,6 +221,7 @@ footer .iconos.peq .ico{width:16px;height:16px}
 .fichas.solo .fijarse{margin:0 0 18px}.fichas.solo .fijtit{margin:0;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teja);margin-bottom:4px}
 .fichas.solo .bt{align-self:flex-start}
 @media(max-width:680px){.fichas.solo .ficha{flex-direction:column}.fichas.solo .ficha .foto{flex:none;aspect-ratio:4/3;min-height:0}.fichas.solo .ficha .cuerpo{padding:20px 22px 22px}}
+.cubierta .banda{padding:46px 0 44px}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "No le eches agua caliente al cristal helado", "description": "Cómo quitar el hielo del parabrisas del coche sin agua caliente: cartón la noche antes, rasqueta de plástico o de latón y pulverizador con alcohol.", "image": "https://elhuertodeanselmo.com/img/recetas/parabrisas.jpg", "inLanguage": "es", "author": {"@type": "Person", "name": "Anselmo"}, "publisher": {"@type": "Organization", "name": "El huerto de Anselmo"}, "mainEntityOfPage": "https://elhuertodeanselmo.com/parabrisas.html", "video": {"@type": "VideoObject", "name": "No le eches agua caliente al cristal helado", "description": "Cómo quitar el hielo del parabrisas del coche sin agua caliente: cartón la noche antes, rasqueta de plástico o de latón y pulverizador con alcohol.", "thumbnailUrl": "https://elhuertodeanselmo.com/img/parabrisas.jpg", "contentUrl": "https://elhuertodeanselmo.com/videos/parabrisas-completo.mp4", "uploadDate": "2026-11-11"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué alcohol se usa para el parabrisas?", "acceptedAnswer": {"@type": "Answer", "text": "Vale el alcohol de farmacia mezclado con agua: dos partes de alcohol y una de agua. Hay también descongelantes de parabrisas ya preparados."}}, {"@type": "Question", "name": "¿Puedo usar agua tibia?", "acceptedAnswer": {"@type": "Answer", "text": "Tampoco es buena idea. Aunque raje menos que la caliente, el agua se vuelve a congelar enseguida y te deja el cristal peor."}}, {"@type": "Question", "name": "¿Y si no tengo cartón?", "acceptedAnswer": {"@type": "Answer", "text": "Una toalla vieja, una funda de parabrisas o incluso una alfombrilla del coche. Lo que sea que tape el cristal."}}, {"@type": "Question", "name": "¿Y los espejos y las ventanillas?", "acceptedAnswer": {"@type": "Answer", "text": "Igual que el parabrisas: rasqueta o pulverizador. Antes de arrancar tienes que ver bien por todos los cristales."}}]}</script>
@@ -236,7 +234,6 @@ footer .iconos.peq .ico{width:16px;height:16px}
 <main class="env">
 
 <div class="cubierta">
-  <div class="portafoto" style="--f:url(img/recetas/parabrisas.jpg)"><img src="img/recetas/parabrisas.jpg" alt="No le eches agua caliente al cristal helado"></div>
   <div class="banda"><div class="ancho">
     <p class="miga" style="padding:0;color:#bfb1a0"><a href="/" style="color:#bfb1a0">Inicio</a> &nbsp;/&nbsp; <a href="/#videos" style="color:#bfb1a0">Vídeos</a></p>
     <span class="eyebrow">Pa la casa y el coche</span>

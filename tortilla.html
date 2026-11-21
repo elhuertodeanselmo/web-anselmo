@@ -211,9 +211,6 @@ footer .iconos.peq a:hover{background:rgba(255,255,255,.08);color:#fff}
 footer .iconos.peq .ico{width:16px;height:16px}
 .ficha .foto img{object-fit:cover;padding:0;background:var(--tinta)}
 .ficha .foto .etq{position:absolute;left:10px;bottom:10px;z-index:2;font-size:.72rem;font-weight:600;background:rgba(20,14,10,.72);color:#fff;padding:4px 9px;border-radius:999px}
-.cubierta .portafoto{position:relative;height:min(420px,60vh);overflow:hidden;background:var(--tinta)}
-.cubierta .portafoto::before{content:"";position:absolute;inset:-40px;background:var(--f) center/cover no-repeat;filter:blur(26px) brightness(.55)}
-.cubierta .portafoto img{position:relative;height:100%;width:auto;max-width:100%;max-height:none;margin:0 auto;object-fit:contain;box-shadow:0 10px 40px rgba(0,0,0,.45)}
 #aperos .cabsec{display:block}#aperos .cabsec p{margin-top:8px}
 .fichas.solo{grid-template-columns:1fr;max-width:920px;gap:22px}
 .fichas.solo .ficha{flex-direction:row}
@@ -224,6 +221,7 @@ footer .iconos.peq .ico{width:16px;height:16px}
 .fichas.solo .fijarse{margin:0 0 18px}.fichas.solo .fijtit{margin:0;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teja);margin-bottom:4px}
 .fichas.solo .bt{align-self:flex-start}
 @media(max-width:680px){.fichas.solo .ficha{flex-direction:column}.fichas.solo .ficha .foto{flex:none;aspect-ratio:4/3;min-height:0}.fichas.solo .ficha .cuerpo{padding:20px 22px 22px}}
+.cubierta .banda{padding:46px 0 44px}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "El error que deja tu tortilla de patatas seca", "description": "Tortilla de patatas jugosa: pochar la patata a fuego bajo, reposo con el huevo y sacarla cuando aún tiembla. Y por qué no guardar patatas con cebollas.", "image": "https://elhuertodeanselmo.com/img/recetas/tortilla.jpg", "inLanguage": "es", "author": {"@type": "Person", "name": "Anselmo"}, "publisher": {"@type": "Organization", "name": "El huerto de Anselmo"}, "mainEntityOfPage": "https://elhuertodeanselmo.com/tortilla.html", "video": {"@type": "VideoObject", "name": "El error que deja tu tortilla de patatas seca", "description": "Tortilla de patatas jugosa: pochar la patata a fuego bajo, reposo con el huevo y sacarla cuando aún tiembla. Y por qué no guardar patatas con cebollas.", "thumbnailUrl": "https://elhuertodeanselmo.com/img/tortilla.jpg", "contentUrl": "https://elhuertodeanselmo.com/videos/tortilla-completo.mp4", "uploadDate": "2026-11-11"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Con cebolla o sin cebolla?", "acceptedAnswer": {"@type": "Answer", "text": "Eso cada casa lo tiene decidido. Si la llevas, póchala junto a la patata a fuego bajo para que quede dulce. Lo que importa de verdad es cómo pochas la patata."}}, {"@type": "Question", "name": "¿Qué patata es mejor para tortilla?", "acceptedAnswer": {"@type": "Answer", "text": "Una patata que aguante sin deshacerse del todo, como la monalisa o la agria. Las patatas nuevas, mejor para cocer."}}, {"@type": "Question", "name": "¿Cuántos huevos por patata?", "acceptedAnswer": {"@type": "Answer", "text": "Para que quede jugosa, más o menos 6 huevos por cada kilo de patatas. Con menos huevo, sale seca y compacta."}}, {"@type": "Question", "name": "¿Se puede dejar hecha de un día para otro?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, en la nevera bien tapada. Sácala un rato antes de comerla: a temperatura ambiente está mucho más rica."}}]}</script>
@@ -236,7 +234,6 @@ footer .iconos.peq .ico{width:16px;height:16px}
 <main class="env">
 
 <div class="cubierta">
-  <div class="portafoto" style="--f:url(img/recetas/tortilla.jpg)"><img src="img/recetas/tortilla.jpg" alt="El error que deja tu tortilla de patatas seca"></div>
   <div class="banda"><div class="ancho">
     <p class="miga" style="padding:0;color:#bfb1a0"><a href="/" style="color:#bfb1a0">Inicio</a> &nbsp;/&nbsp; <a href="/#videos" style="color:#bfb1a0">Vídeos</a></p>
     <span class="eyebrow">Almuerzos de campo · Receta nº 72</span>

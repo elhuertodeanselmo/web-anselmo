@@ -211,9 +211,6 @@ footer .iconos.peq a:hover{background:rgba(255,255,255,.08);color:#fff}
 footer .iconos.peq .ico{width:16px;height:16px}
 .ficha .foto img{object-fit:cover;padding:0;background:var(--tinta)}
 .ficha .foto .etq{position:absolute;left:10px;bottom:10px;z-index:2;font-size:.72rem;font-weight:600;background:rgba(20,14,10,.72);color:#fff;padding:4px 9px;border-radius:999px}
-.cubierta .portafoto{position:relative;height:min(420px,60vh);overflow:hidden;background:var(--tinta)}
-.cubierta .portafoto::before{content:"";position:absolute;inset:-40px;background:var(--f) center/cover no-repeat;filter:blur(26px) brightness(.55)}
-.cubierta .portafoto img{position:relative;height:100%;width:auto;max-width:100%;max-height:none;margin:0 auto;object-fit:contain;box-shadow:0 10px 40px rgba(0,0,0,.45)}
 #aperos .cabsec{display:block}#aperos .cabsec p{margin-top:8px}
 .fichas.solo{grid-template-columns:1fr;max-width:920px;gap:22px}
 .fichas.solo .ficha{flex-direction:row}
@@ -224,6 +221,7 @@ footer .iconos.peq .ico{width:16px;height:16px}
 .fichas.solo .fijarse{margin:0 0 18px}.fichas.solo .fijtit{margin:0;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teja);margin-bottom:4px}
 .fichas.solo .bt{align-self:flex-start}
 @media(max-width:680px){.fichas.solo .ficha{flex-direction:column}.fichas.solo .ficha .foto{flex:none;aspect-ratio:4/3;min-height:0}.fichas.solo .ficha .cuerpo{padding:20px 22px 22px}}
+.cubierta .banda{padding:46px 0 44px}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "El error que hace que tus castañas revienten", "description": "Cómo asar castañas en casa sin que revienten: el corte, la sartén de agujeros y el truco del trapo para que se pelen solas.", "image": "https://elhuertodeanselmo.com/img/recetas/castanas.jpg", "inLanguage": "es", "author": {"@type": "Person", "name": "Anselmo"}, "publisher": {"@type": "Organization", "name": "El huerto de Anselmo"}, "mainEntityOfPage": "https://elhuertodeanselmo.com/castanas.html", "video": {"@type": "VideoObject", "name": "El error que hace que tus castañas revienten", "description": "Cómo asar castañas en casa sin que revienten: el corte, la sartén de agujeros y el truco del trapo para que se pelen solas.", "thumbnailUrl": "https://elhuertodeanselmo.com/img/castanas.jpg", "contentUrl": "https://elhuertodeanselmo.com/videos/castanas-completo.mp4", "uploadDate": "2026-11-11"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Se pueden hacer castañas asadas en el horno?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Con el mismo corte, en una bandeja a 200 °C unos 25–30 minutos, dándoles la vuelta a mitad. Salen buenas, pero no cogen ese gusto a tostado que da la sartén de agujeros."}}, {"@type": "Question", "name": "¿Y en el microondas?", "acceptedAnswer": {"@type": "Answer", "text": "Se puede salir del paso: cortadas, en un plato tapado, de 2 a 3 minutos a máxima potencia, por tandas pequeñas. Se cuecen más que se asan, y si no las cortas bien revientan igual."}}, {"@type": "Question", "name": "¿Hay que ponerlas en remojo antes?", "acceptedAnswer": {"@type": "Answer", "text": "No hace falta. Si son castañas viejas y algo secas, media hora en agua templada antes de cortarlas les devuelve algo de jugo."}}, {"@type": "Question", "name": "¿Cuánto duran asadas?", "acceptedAnswer": {"@type": "Answer", "text": "Lo mejor es comerlas recién hechas. Peladas, en un táper en la nevera aguantan 2 o 3 días, y sirven para guisos, purés o para la receta de castañas con leche."}}]}</script>
@@ -236,7 +234,6 @@ footer .iconos.peq .ico{width:16px;height:16px}
 <main class="env">
 
 <div class="cubierta">
-  <div class="portafoto" style="--f:url(img/recetas/castanas.jpg)"><img src="img/recetas/castanas.jpg" alt="El error que hace que tus castañas revienten"></div>
   <div class="banda"><div class="ancho">
     <p class="miga" style="padding:0;color:#bfb1a0"><a href="/" style="color:#bfb1a0">Inicio</a> &nbsp;/&nbsp; <a href="/#videos" style="color:#bfb1a0">Vídeos</a></p>
     <span class="eyebrow">De la lumbre · Receta nº 2</span>
